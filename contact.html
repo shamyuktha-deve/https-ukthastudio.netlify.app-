@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Shamyuktha Studio</title>
+  <meta name="description"
+    content="Get in touch with Shamyuktha for website design, poster design, or video editing services. Based in Chennai, Tamil Nadu.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Shamyuktha<span>.</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="nav-cta active">Hire Me</a>
+    </div>
+    <div class="nav-hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <h1>Let's Work Together</h1>
+    <p>Tell me about your project. I'll get back to you within 24 hours.</p>
+  </div>
+
+  <section class="section">
+    <div class="contact-grid">
+
+      <!-- INFO SIDEBAR -->
+      <div class="fade-in">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+
+          <a href="mailto:shamyukthamathana@gmail.com" class="contact-item" id="emailLink">
+            <span class="ci-icon">📧</span>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-text">shamyukthamathana@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/919176250369?text=Hi%20I%20need%20a%20website" target="_blank" class="contact-item"
+            id="whatsappLink">
+            <span class="ci-icon">📱</span>
+            <div>
+              <div class="ci-label">WhatsApp</div>
+              <div class="ci-text">+91 91762 50369</div>
+            </div>
+          </a>
+
+          <div class="contact-item" style="cursor:default;">
+            <span class="ci-icon">📍</span>
+            <div>
+              <div class="ci-label">Location</div>
+              <div class="ci-text">Chennai, Tamil Nadu</div>
+            </div>
+          </div>
+
+          <a href="https://github.com/shamyuktha-deve" target="_blank" class="contact-item" id="githubLink">
+            <span class="ci-icon">🐙</span>
+            <div>
+              <div class="ci-label">GitHub</div>
+              <div class="ci-text">github.com/shamyuktha-deve</div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/shamyukthamanoharan-/" target="_blank" class="contact-item"
+            id="linkedinLink">
+            <span class="ci-icon">💼</span>
+            <div>
+              <div class="ci-label">LinkedIn</div>
+              <div class="ci-text">linkedin.com/in/shamyukthamanoharan-</div>
+            </div>
+          </a>
+
+          <div
+            style="margin-top: 28px; padding: 20px; background: rgba(37,99,235,0.06); border-radius: var(--radius); border: 1px solid rgba(37,99,235,0.15);">
+            <p style="font-size:0.88rem; color:var(--text); line-height:1.7;">
+              ⏰ <strong>Response time:</strong> Within 24 hours<br>
+              📅 <strong>Availability:</strong> Mon – Sat, 9am – 7pm IST<br>
+              ✅ <strong>Free consultation</strong> for new projects
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form fade-in">
+        <h3>Send Me a Message</h3>
+        <form action="https://formspree.io/f/mojorzlw" method="POST" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="priya@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">WhatsApp Number (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">— Select a Service —</option>
+              <option value="basic-website">Basic Website (₹1,999+)</option>
+              <option value="business-website">Business Website (₹3,999+)</option>
+              <option value="ecommerce">E-Commerce Website (₹7,999+)</option>
+              <option value="poster">Poster Design (₹499+)</option>
+              <option value="video">Video Editing (₹799+)</option>
+              <option value="bundle">Content Bundle (₹1,999/mo)</option>
+              <option value="other">Something Else</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Me About Your Project</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Describe your business, what you need, and your timeline..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn"
+            style="width:100%; justify-content:center; font-size:1rem; padding:14px;">
+            🚀 Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Shamyuktha<span>.</span></h3>
+        <p>Freelance web designer & developer based in Chennai, Tamil Nadu. Building modern digital experiences for
+          businesses that want to grow online.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="mailto:shamyukthamathana@gmail.com">📧 Email</a>
+        <a href="https://wa.me/919176250369" target="_blank">📱 WhatsApp</a>
+        <a href="https://github.com/shamyuktha-deve" target="_blank">🐙 GitHub</a>
+        <a href="https://www.linkedin.com/in/shamyukthamanoharan-/" target="_blank">💼 LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Shamyuktha Creative Studio. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://github.com/shamyuktha-deve" target="_blank">🐙</a>
+        <a href="https://www.linkedin.com/in/shamyukthamanoharan-/" target="_blank">💼</a>
+        <a href="https://wa.me/919176250369" target="_blank">💬</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/919176250369?text=Hi%20I%20need%20a%20website" target="_blank">💬</a>
+
+  <script>
+    function toggleNav() { document.getElementById('navLinks').classList.toggle('open'); }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 100); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>

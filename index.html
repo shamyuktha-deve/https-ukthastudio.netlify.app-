@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shamyuktha — Freelance Web Designer & Developer</title>
+  <meta name="description"
+    content="Hi, I'm Shamyuktha. I build modern, responsive websites that help businesses grow online. Offering website design, poster design, and video editing services.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Shamyuktha<span>.</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="nav-cta">Hire Me</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Available for Freelance Work</div>
+      <h1>Hi, I'm <span>Shamyuktha</span> 👋</h1>
+      <p class="hero-subtitle">I build modern websites that help businesses grow online. Turning your ideas into clean,
+        fast, and beautiful digital experiences.</p>
+      <ul class="hero-checklist">
+        <li>Responsive Websites</li>
+        <li>Poster &amp; Graphic Design</li>
+        <li>Video Editing &amp; Reels</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="projects.html" class="btn btn-primary" id="viewWorkBtn">🚀 View My Work</a>
+        <a href="contact.html" class="btn btn-outline" id="getQuoteBtn">💬 Get Free Quote</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="images/avatar.png" alt="Shamyuktha — Web Developer & Designer">
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-num">10+</span>
+      <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">100%</span>
+      <div class="stat-label">Client Satisfaction</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">3+</span>
+      <div class="stat-label">Years Learning</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">Fast</span>
+      <div class="stat-label">Turnaround</div>
+    </div>
+  </div>
+
+  <!-- PROJECTS PREVIEW -->
+  <section class="section" id="projects">
+    <div class="section-header fade-in">
+      <div class="section-tag">Portfolio</div>
+      <h2>My Recent Projects</h2>
+      <p>Hand-crafted websites built for real businesses — responsive, fast, and designed to convert.</p>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card fade-in">
+        <img src="images/project-restaurant.png" alt="Spice Garden Restaurant Website" class="card-img">
+        <div class="card-body">
+          <h3>🍽️ Spice Garden Restaurant</h3>
+          <p>A full restaurant website with online menu, reservation system, and food gallery.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="card-links">
+            <a href="https://spice-garden-restrunt.netlify.app/" target="_blank" class="card-link card-link-primary"
+              id="restaurantDemo">Live Demo</a>
+            <a href="https://github.com/shamyuktha-deve/portfolio" target="_blank" class="card-link card-link-outline"
+              id="restaurantGithub">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <img src="images/project-gym.png" alt="PowerFit Gym Website" class="card-img">
+        <div class="card-body">
+          <h3>💪 PowerFit Gym</h3>
+          <p>Bold fitness website with membership plans, class timetable, and trainer profiles.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="card-links">
+            <a href="https://ironforge-fittness.netlify.app/" target="_blank" class="card-link card-link-primary"
+              id="gymDemo">Live Demo</a>
+            <a href="https://github.com/shamyuktha-deve/portfolio" target="_blank" class="card-link card-link-outline"
+              id="gymGithub">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <img src="images/project-salon.png" alt="Glamour Studio Salon Website" class="card-img">
+        <div class="card-body">
+          <h3>💇 Glamour Studio Salon</h3>
+          <p>Luxury salon website with service menu, online booking, and Instagram feed.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="card-links">
+            <a href="https://ukthas-beauty-world.netlify.app/" target="_blank" class="card-link card-link-primary"
+              id="salonDemo">Live Demo</a>
+            <a href="https://github.com/shamyuktha-deve" target="_blank" class="card-link card-link-outline"
+              id="salonGithub">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <img src="images/project-college.png" alt="TechFest College Event Website" class="card-img">
+        <div class="card-body">
+          <h3>🎓 TechFest 2025</h3>
+          <p>College tech fest website with countdown timer, event schedule, and registrations.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="card-links">
+            <a href="https://tech-fest-09iuc.netlify.app/" target="_blank" class="card-link card-link-primary"
+              id="collegeDemo">Live Demo</a>
+            <a href="https://github.com/shamyuktha-deve/portfolio" target="_blank" class="card-link card-link-outline"
+              id="collegeGithub">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="projects.html" class="btn btn-dark" id="allProjectsBtn">View All Projects →</a>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="section section-alt">
+    <div class="section-header fade-in">
+      <div class="section-tag">Services</div>
+      <h2>What I Offer</h2>
+      <p>Affordable, quality digital services tailored for small businesses and startups.</p>
+    </div>
+
+    <div class="pricing-grid" style="max-width:900px;">
+      <div class="pricing-card fade-in">
+        <div class="pricing-icon">💻</div>
+        <h3>Basic Website</h3>
+        <div class="pricing-price">₹1,999 <span>onwards</span></div>
+        <p class="pricing-desc">Perfect for small businesses & startups.</p>
+        <ul class="pricing-features">
+          <li>5 Pages</li>
+          <li>Responsive Design</li>
+          <li>Contact Form</li>
+          <li>3 Revisions</li>
+        </ul>
+        <a href="contact.html" class="pricing-cta" id="basicCta">Get Started</a>
+      </div>
+
+      <div class="pricing-card featured fade-in">
+        <div class="badge-popular">⭐ Most Popular</div>
+        <div class="pricing-icon">🚀</div>
+        <h3>Business Website</h3>
+        <div class="pricing-price">₹3,999 <span>onwards</span></div>
+        <p class="pricing-desc">Everything you need to grow online.</p>
+        <ul class="pricing-features">
+          <li>8–10 Pages</li>
+          <li>SEO Ready</li>
+          <li>WhatsApp Integration</li>
+          <li>5 Revisions</li>
+        </ul>
+        <a href="contact.html" class="pricing-cta" id="businessCta">Get Started</a>
+      </div>
+
+      <div class="pricing-card fade-in">
+        <div class="pricing-icon">🎨</div>
+        <h3>Poster Design</h3>
+        <div class="pricing-price">₹499 <span>/set</span></div>
+        <p class="pricing-desc">Eye-catching designs that get noticed.</p>
+        <ul class="pricing-features">
+          <li>Instagram Posts</li>
+          <li>Flyers</li>
+          <li>Event Posters</li>
+          <li>Unlimited Revisions</li>
+        </ul>
+        <a href="contact.html" class="pricing-cta" id="designCta">Get Started</a>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="services.html" class="btn btn-primary" id="allServicesBtn">See All Services & Pricing →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Shamyuktha<span>.</span></h3>
+        <p>Freelance web designer & developer based in Chennai, Tamil Nadu. Building modern digital experiences for
+          businesses that want to grow online.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="mailto:shamyukthamathana@gmail.com">📧 Email</a>
+        <a href="https://wa.me/919176250369" target="_blank">📱 WhatsApp</a>
+        <a href="https://github.com/shamyuktha-deve" target="_blank">🐙 GitHub</a>
+        <a href="https://www.linkedin.com/in/shamyukthamanoharan-/" target="_blank">💼 LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Shamyuktha Creative Studio. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://github.com/shamyuktha-deve" target="_blank" title="GitHub">🐙</a>
+        <a href="https://www.linkedin.com/in/shamyukthamanoharan-/" target="_blank" title="LinkedIn">💼</a>
+        <a href="https://wa.me/919176250369" target="_blank" title="WhatsApp">💬</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/919176250369?text=Hi%20I%20need%20a%20website" target="_blank"
+    title="Chat on WhatsApp">💬</a>
+
+  <script>
+    // Mobile nav toggle
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    // Scroll fade-in with IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>

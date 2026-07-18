@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Shamyuktha Studio</title>
+  <meta name="description"
+    content="View Shamyuktha's portfolio of web design projects including restaurant, gym, salon, and college event websites.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 8px 20px;
+      border-radius: 50px;
+      border: 1.5px solid var(--border);
+      background: var(--white);
+      color: var(--text);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .project-card-full .card-body {
+      padding: 24px;
+    }
+
+    .project-card-full .card-img {
+      height: 220px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Shamyuktha<span>.</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html" class="nav-cta">Hire Me</a>
+    </div>
+    <div class="nav-hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <h1>My Projects</h1>
+    <p>Real websites built for real businesses — responsive, fast, and designed to convert visitors into customers.</p>
+  </div>
+
+  <section class="section">
+    <!-- Filter Buttons -->
+    <div class="filter-bar fade-in">
+      <button class="filter-btn active" id="filterAll" onclick="filterProjects('all')">All Projects</button>
+      <button class="filter-btn" id="filterWebsite" onclick="filterProjects('website')">🌐 Websites</button>
+      <button class="filter-btn" id="filterDesign" onclick="filterProjects('design')">🎨 Design</button>
+      <button class="filter-btn" id="filterEvent" onclick="filterProjects('event')">🎓 Events</button>
+    </div>
+
+    <div class="cards-grid" id="projectsGrid">
+
+      <div class="card project-card-full fade-in" data-category="website">
+        <img src="images/project-restaurant.png" alt="Spice Garden Restaurant Website" class="card-img">
+        <div class="card-body">
+          <h3>🍽️ Spice Garden Restaurant</h3>
+          <p>A complete restaurant website featuring an online menu with food photography, table reservation system,
+            customer reviews section, and Google Maps integration.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Responsive</span>
+          </div>
+          <div class="card-links">
+            <a href="https://spice-garden-restrunt.netlify.app/" target="_blank" class="card-link card-link-primary"
+              id="proj1Demo">🌐 Live Demo</a>
+            <a href="https://github.com/shamyuktha-deve/portfolio" target="_blank" class="card-link card-link-outline"
+              id="proj1Github">🐙 GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card-full fade-in" data-category="website">
+        <img src="images/project-gym.png" alt="PowerFit Gym Website" class="card-img">
+        <div class="card-body">
+          <h3>💪 PowerFit Gym</h3>
+          <p>A bold fitness center website with animated hero section, membership pricing plans, class timetable,
+            trainer profiles, and WhatsApp inquiry integration.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">WhatsApp API</span>
+          </div>
+          <div class="card-links">
+            <a href="https://ironforge-fittness.netlify.app/" target="_blank" class="card-link card-link-primary"
+              id="proj2Demo">🌐 Live Demo</a>
+            <a href="https://github.com/shamyuktha-deve/portfolio" target="_blank" class="card-link card-link-outline"
+              id="proj2Github">🐙 GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card-full fade-in" data-category="website design">
+        <img src="images/project-salon.png" alt="Glamour Studio Salon Website" class="card-img">
+        <div class="card-body">
+          <h3>💇 Glamour Studio Salon</h3>
+          <p>A premium salon website with an elegant rose-gold aesthetic, service menu with pricing, online appointment
+            booking, and an Instagram-style gallery section.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Booking Form</span>
+          </div>
+          <div class="card-links">
+            <a href="https://ukthas-beauty-world.netlify.app/" target="_blank" class="card-link card-link-primary"
+              id="proj3Demo">🌐 Live Demo</a>
+            <a href="https://github.com/shamyuktha-deve" target="_blank" class="card-link card-link-outline"
+              id="proj3Github">🐙 GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card-full fade-in" data-category="event">
+        <img src="images/project-college.png" alt="TechFest 2025 College Event Website" class="card-img">
+        <div class="card-body">
+          <h3>🎓 TechFest 2025 — College Event</h3>
+          <p>A vibrant college tech-fest website with a live countdown timer, multi-day event schedule, speaker lineup,
+            and online registration form with Google Sheets integration.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Countdown Timer</span>
+          </div>
+          <div class="card-links">
+            <a href="https://tech-fest-09iuc.netlify.app/" target="_blank" class="card-link card-link-primary"
+              id="proj4Demo">🌐 Live Demo</a>
+            <a href="https://github.com/shamyuktha-deve/portfolio" target="_blank" class="card-link card-link-outline"
+              id="proj4Github">🐙 GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div style="text-align:center; margin-top:60px;" class="fade-in">
+      <div class="section-tag" style="margin-bottom:14px;">Like What You See?</div>
+      <h2 style="font-size:1.8rem; font-weight:800; color:var(--dark); margin-bottom:12px; letter-spacing:-0.5px;">Let's
+        Build Your Website</h2>
+      <p style="color:var(--text-light); max-width:480px; margin:0 auto 28px;">I can build something just like this for
+        your business. Get in touch for a free consultation.</p>
+      <a href="contact.html" class="btn btn-primary" id="projectsCtaBtn" style="font-size:1rem; padding:14px 32px;">🚀
+        Start Your Project</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Shamyuktha<span>.</span></h3>
+        <p>Freelance web designer & developer based in Chennai, Tamil Nadu. Building modern digital experiences for
+          businesses that want to grow online.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="mailto:shamyukthamathana@gmail.com">📧 Email</a>
+        <a href="https://wa.me/919176250369" target="_blank">📱 WhatsApp</a>
+        <a href="https://github.com/shamyuktha-deve" target="_blank">🐙 GitHub</a>
+        <a href="https://www.linkedin.com/in/shamyukthamanoharan-/" target="_blank">💼 LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Shamyuktha Creative Studio. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://github.com/shamyuktha-deve" target="_blank">🐙</a>
+        <a href="https://www.linkedin.com/in/shamyukthamanoharan-/" target="_blank">💼</a>
+        <a href="https://wa.me/919176250369" target="_blank">💬</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/919176250369?text=Hi%20I%20need%20a%20website" target="_blank">💬</a>
+
+  <script>
+    function toggleNav() { document.getElementById('navLinks').classList.toggle('open'); }
+
+    function filterProjects(category) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      document.querySelectorAll('#projectsGrid .card').forEach(card => {
+        const cats = card.dataset.category || '';
+        card.style.display = (category === 'all' || cats.includes(category)) ? '' : 'none';
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 100); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>
